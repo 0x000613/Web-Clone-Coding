@@ -1,0 +1,119 @@
+<!-- 
+- filename : index.html
+- description : 메인 HTML 파일
+- author : 김우영
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>KakaoTalk</title>
+</head>
+
+<body>
+    <!-- 컨테이너 영역 -->
+    <div id="container">
+        <!-- 사이드 영역 -->
+        <div id="side">
+            <div id="side-top-icons">
+                <span class="material-icons active">person</span>
+                <span class="material-icons">message</span>
+                <span class="material-icons">more_horiz</span>
+            </div>
+            <div id="side-bottom-icons">
+                <span class="material-icons">notifications</span>
+                <span class="material-icons">settings</span>
+            </div>
+        </div>
+
+        <div id="contents">
+            <!-- 헤더 영역 -->
+            <div id="header">
+                <h1 class="header-text">친구</h1>
+                <div id="header-icons">
+                    <span class="material-icons">search</span>
+                    <span class="material-icons">person_add</span>
+                </div>
+            </div>
+
+            <!-- 마이프로필 영역 -->
+            <div id="my-profile">
+                <img class="prof-pic" src="https://avatars.githubusercontent.com/u/77450463?v=4" width="50" height="50" />
+                <span>김우영</span>
+            </div>
+            <hr />
+            <!-- 멀티프로필 영역 -->
+            <div id="multiprofile">
+                <span class="area-title">내 멀티 프로필 1</span>
+                <img class="prof-pic-no" src="./img/kakao-df-picp.png" width="40" height="40" />
+                <span>WooYo…</span>
+            </div>
+            <hr />
+
+            <!-- 친구 생일 알림 영역 -->
+            <div class="fr-birth noti">
+                <span class="area-title">생일인 친구</span>
+                <div>
+                    <img class="prof-pic-no" src="./img/kakao-logo.jpeg" width="30px" height="30px" />
+                    <span>친구의 생일을 확인해보세요!<span style="color:#797979">6</span></span>
+                </div>
+            </div>
+            <hr />
+
+            <!-- 친구 프로필 업데이트 알림 영역 -->
+            <div class="fr-birth noti">
+                <span class="area-title">업데이트한 친구</span>
+                <div>
+                    <img class="prof-pic-no" src="./img/kakao-logo.jpeg" width="30px" height="30px" />
+                    <span>친구의 프로필을 확인해보세요!<span style="color:#797979">14</span></span>
+                </div>
+            </div>
+            <hr />
+
+            <!-- 채널 목록 -->
+            <div class="fr-birth noti">
+                <span class="area-title">채널</span>
+                <div>
+                    <img class="prof-pic-no" src="./img/kakao-channel-logo.png" width="30px" height="30px" />
+                    <span>채널<span style="color:#797979">35</span></span>
+                </div>
+            </div>
+            <hr />
+
+            <!-- 친구 목록 -->
+            <div class="fr-birth noti">
+                <span class="area-title">친구</span>
+                <div>
+                    <img class="prof-pic-no" src="./img/kakao-df-picp.png" width="30px" height="30px" />
+                    <div>
+                        <span class="fr-name">카카오톡친구</span>
+                        <span class="fr-info" style="color:#797979">자기소개입니다.</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="prof-pic-no" src="./img/kakao-df-picp.png" width="30px" height="30px" />
+                    <div>
+                        <span class="fr-name">카카오톡친구</span>
+                        <span class="fr-info" style="color:#797979">자기소개입니다.</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="prof-pic-no" src="./img/kakao-df-picp.png" width="30px" height="30px" />
+                    <div>
+                        <span class="fr-name">카카오톡친구</span>
+                        <span class="fr-info" style="color:#797979">자기소개입니다.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
