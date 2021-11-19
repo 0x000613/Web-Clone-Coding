@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>fullPage.js Example</title>
+  <link rel='stylesheet' href='https://unpkg.com/fullpage.js/dist/fullpage.min.css' />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/common.css" />
+</head>
+
+<body>
+
+  <!-- Fixed 헤더 영역 시작 -->
+  <header id="header">
+    <h1>WooYoung Kim</h1>
+  </header>
+
+  <!-- 메인 스크롤 영역 시작-->
+  <!-- Slide 1 - 라이브러리 정보와 설치 방법 -->
+  <div id="fullpage">
+    <div id="slide1" class="section">
+      <div>
+        <span class="title">fullPage.js Example</span>
+        <a href="https://alvarotrigo.com/fullPage/ko/" class="desc">https://alvarotrigo.com/fullPage/ko/</a>
+        <br />
+        <div>
+          <span class="title">Installation</span>
+          <code class="desc">$ npm install fullpage.js --save</code>
+          <span class="desc">or</span>
+          <a href="https://alvarotrigo.com/fullPage/ko/" class="desc">https://github.com/alvarotrigo/fullPage.js/tree/master/lang/korean</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 - 수평 스크롤 기능 -->
+    <div id="slide2" class="section">
+      <div class="slide" data-anchor="slide1">
+        <span class="title">수평 스크롤 1번째 슬라이드입니다.</span>
+        <span class="desc">이 슬라이드는 배경을 단색으로 지정했습니다.</span>
+      </div>
+      <div id="horizontal-slide2" class="slide" data-anchor="slide2">
+        <span class="title">수평 스크롤 2번째 슬라이드입니다.</span>
+        <span class="desc">이 슬라이드는 배경을 사진으로 지정했습니다.</span>
+      </div>
+    </div>
+
+    <!-- Slide 3 - 백그라운드 영상 재생 -->
+    <div id="slide3" class="section">
+      <span class="title layer">백그라운드 비디오 배경 기능입니다.</span>
+      <video id="myVideo" loop muted data-autoplay>
+        <source src="./assets/video/flowers.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- Slide 4 - 페이지 전환 핸들링 트리거 -->
+    <div id="slide4" class="section">
+      <span class="title">페이지 전환 핸들링 (애니메이션)</span>
+      <br />
+      <img id="html" src="./assets/img/html.png" width="200px" height="200px" />
+      <img id="css" src="./assets/img/css.png" width="200px" height="200px" />
+      <img id="js" src="./assets/img/js.png" width="200px" height="200px" />
+    </div>
+  </div>
+
+  <!-- 자바스크립트 -->
+  <!-- fullpage.js -->
+  <script src='https://unpkg.com/fullpage.js/dist/fullpage.min.js'></script>
+  <!-- animations.js-->
+  <script src="./assets/lib/animationsjs/animations.js"></script>
+  <!-- 사용자 정의 js -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
